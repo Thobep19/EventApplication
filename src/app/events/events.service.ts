@@ -26,7 +26,7 @@ export class EventService {
 
     getEventById(eventId): Promise<Object> {
         return this.http.get(`${this.apiUrl}/events/id/${eventId}`).toPromise().then((resp) => {
-            let book = resp.json();
+            let event = resp.json();
             console.log('event', event);
             return event;
         });
@@ -51,7 +51,7 @@ export class EventService {
 
     updateEvent(id, event): Promise<Object> {
         return this.http.put(`${this.apiUrl}/events/id/${id}`, event).toPromise().then((resp) => {
-            let book = resp.json();
+            let event = resp.json();
             console.log('event', event);
             return event;
         });

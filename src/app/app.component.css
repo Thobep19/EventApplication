@@ -11,3 +11,20 @@
     height: 100px;
     width:100%;
 }
+.event-feed{
+    width:70%;
+    flex:1;
+    height:500px;
+    background-color:#CCC;
+    float:left;
+}
+.related-links{
+    width:20%;
+    height:500px;
+    background-color: green;
+    float:right;
+}
+.main-footer{
+    background-color:blue;
+    height:100 px;
+}

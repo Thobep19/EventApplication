@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class EventComponent implements OnInit {
 
-  book: Object;
+  event: Object;
 
   constructor(
     private eventService: EventService,
@@ -20,8 +20,8 @@ export class EventComponent implements OnInit {
     console.log(this.activatedRoute.snapshot.params['id'])
     this.eventService.getEventById(this.activatedRoute.snapshot.params['id'])
       .then((resp) => {
-        console.log('resp book', resp);
-        this.book = resp;
+        console.log('resp event', resp);
+        this.event = resp;
      });
   }
   

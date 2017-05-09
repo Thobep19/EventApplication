@@ -1,0 +1,9 @@
+.main-aside{
+    background-color:blueviolet;
+    height:500px;
+    width:10%;
+    float:left;
+}
+.main-ul li{
+    list-style: none;
+}

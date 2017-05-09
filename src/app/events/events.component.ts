@@ -29,7 +29,7 @@ export class EventsComponent implements OnInit {
     return this.eventService.getEvents();
   }
 
-  getBookById(id) {
+  getEventById(id) {
     return this.eventService.getEventById(id);
   }
 

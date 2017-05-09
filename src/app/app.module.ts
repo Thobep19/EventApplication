@@ -11,12 +11,14 @@ import { EventService } from './events/events.service';
 import { AppComponent } from './app.component';
 import { EventsComponent } from './events/events.component';
 import { EventComponent } from './events/event/event.component';
+import { MainNavigationComponent } from './main-navigation/main-navigation.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 // Routes
 const appRoutes: Routes = [
   { path: '', component: EventsComponent },
   { path: 'event/:id',   component: EventComponent },
- // { path: 'create',   component: BookCreateComponent }
+ //{ path: 'create',   component: BookCreateComponent }
 ];
 
 // NgModule
@@ -26,7 +28,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     EventsComponent,
-    EventComponent
+    EventComponent,
+    MainNavigationComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
