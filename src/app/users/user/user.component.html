@@ -1,0 +1,12 @@
+<section>
+    <div>
+        <ul>
+            <div *ngFor="let user of users" [routerLink]="['user',user._id] ">
+                <section *ngIf="user">
+                    <P>{{user.userDescription}}</P>
+                    <P>{{user.UserDate}}</P>
+                </section>
+            </div>
+        </ul>
+    </div>
+</section>
