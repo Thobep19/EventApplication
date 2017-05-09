@@ -1,3 +1,23 @@
-<h1>
-  {{title}}
-</h1>
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Event Page</title>
+  </head>
+<div class="Main">
+  <header class = "main-header">
+    <h1>Bulldog Event Tracker</h1>
+  </header>
+  <main-navigation></main-navigation>
+  <section class = "event-feed">
+          <ul>
+            <router-outlet></router-outlet>
+          </ul>
+  </section>
+  <aside class = "related-links">
+
+  </aside>
+  <footer class = "main-footer">
+    <p>(C) Created by Masters of the Web</p>
+  </footer>
+</div>
+</html>
