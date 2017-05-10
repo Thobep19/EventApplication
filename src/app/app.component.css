@@ -6,25 +6,22 @@
     width:80%;
     margin:0 auto;
 }
+html{
+    background-image:url('../assets/images/background.jpg');
+    background-size: cover;
+}
 .main-header{
-    background-color: blue;
+    background-color:lightblue;
     height: 100px;
     width:100%;
 }
 .event-feed{
-    width:70%;
+    width:80%;
     flex:1;
     height:500px;
-    background-color:#CCC;
-    float:left;
 }
-.related-links{
-    width:20%;
-    height:500px;
-    background-color: green;
-    float:right;
-}
+
 .main-footer{
-    background-color:blue;
+    background-color:lightblue;
     height:100 px;
 }

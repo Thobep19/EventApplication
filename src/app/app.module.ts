@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, FormBuilder,FormGroup } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, Router } from '@angular/router';
 
 // Services
 import { EventService } from './events/events.service';
@@ -13,12 +13,17 @@ import { EventsComponent } from './events/events.component';
 import { EventComponent } from './events/event/event.component';
 import { MainNavigationComponent } from './main-navigation/main-navigation.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { EventFormComponent } from './events/event-form/event-form.component';
+import { UsersComponent } from './users/users.component';
+import { UserFormComponent } from './user-form/user-form.component';
+import { UserComponent } from './user/user.component';
 
 // Routes
 const appRoutes: Routes = [
   { path: '', component: EventsComponent },
   { path: 'event/:id',   component: EventComponent },
- //{ path: 'create',   component: BookCreateComponent }
+  { path: 'aboutus', component: AboutusComponent },
+  { path: 'event-form/:id', component: EventFormComponent }
 ];
 
 // NgModule
@@ -30,7 +35,11 @@ const appRoutes: Routes = [
     EventsComponent,
     EventComponent,
     MainNavigationComponent,
-    AboutusComponent
+    AboutusComponent,
+    UsersComponent,
+    UserFormComponent,
+    UserComponent,
+    EventFormComponent,
   ],
   imports: [
     BrowserModule,

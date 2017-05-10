@@ -1,9 +1,11 @@
 .main-aside{
-    background-color:blueviolet;
+    background-color:lightblue;
     height:500px;
-    width:10%;
+    width:20%;
     float:left;
 }
 .main-ul li{
     list-style: none;
+    display:block;
+    border:2pc #ccc;
 }

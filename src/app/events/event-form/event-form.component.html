@@ -1,0 +1,28 @@
+<h1>Add New Event</h1>
+<div>
+  <h1>Enter Event Information</h1>
+  <input type="text" [(ngModel)]="event.eventName">
+  <input type="text" [(ngModel)]="event.eventDescription">
+  <input type="text" [(ngModel)]="event.eventDate">
+  <input type="text" [(ngModel)]="event.eventTime">
+  <input type="text" [(ngModel)]="event.eventLocation.eventStreet">
+  <input type="text" [(ngModel)]="event.eventLocation.eventCity">
+  <input type="text" [(ngModel)]="event.eventLocation.eventZip">
+  <input type="text" [(ngModel)]="event.eventPrice">
+  <input type="text" [(ngModel)]="event.eventStart">
+
+  <h1>Enter Organization Information</h1>
+  <input type="text" [(ngModel)]="event.Organization.organizationName">
+  <input type="text" [(ngModel)]="event.Organization.organizationAddress">
+  <input type="text" [(ngModel)]="event.Organization.organizationCity">
+  <input type="text" [(ngModel)]="event.Organization.organizationZip">
+  <input type="text" [(ngModel)]="event.Organization.organizationDescription">
+  <input type="text" [(ngModel)]="event.Organization.organizationType">
+
+  <h1>Enter Organizor Information</h1>
+  <input type="text" [(ngModel)]="event.Organizor.organizorFirstName">
+  <input type="text" [(ngModel)]="event.Organization.organizorLastName">
+  <input type="text" [(ngModel)]="event.Organization.organizorPhone">
+  <input type="text" [(ngModel)]="event.Organization.organizationEmail">
+  <button (click)="addEvent(event)">Add Event</button>
+</div>

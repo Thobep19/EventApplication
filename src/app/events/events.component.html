@@ -1,21 +1,31 @@
 <section>
     <div>
     <ul>
-      <table>
+      <h1>Event</h1>
+      <table class ="table-header">
         <tr>
-            <th><h1>Event Description</h1></th>
-            <th><h1>Event Date</h1></th>
+            <th><h1>Name</h1></th>
+            <th><h1>Date</h1></th>
+            <th><h1>Time</h1></th>
+            <th><h1>Street</h1></th>
+            <th><h1>City</h1></th>
+            <th><h1>State</h1></th>
+            <th><h1>Zipcode</h1></th>
             <th><h1>Delete</h1></th>
         </tr>
       </table>
       <div *ngFor="let event of events" [routerLink]="['event',event._id] ">
         <section>
-          <table>
+          <table class = "table-main">
             <tr>
-              <th>{{event.eventDescription}}</th>
+              <th>{{event.eventName}}</th>
               <th>{{event.eventDate}}</th>
-              <th><button (click)="deleteEvent(event._id)">X</button></th>
-          </tr>
+              <th>{{event.eventTime}}</th>
+              <th>{{event.eventLocation.eventStreet}}</th>
+              <th>{{event.eventLocation.eventCity}}</th>
+              <th>{{event.eventLocation.eventZip}}</th>
+              <th><button (click)="deleteEvent(event._id)">Delete</button></th>
+            </tr>
           </table>
         </section>
       </div>
