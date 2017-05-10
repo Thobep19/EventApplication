@@ -1,21 +1,17 @@
-.table-header{
-width:200;
-margin-left:25%;
-}
 
-.table-header th {
-    color:black;
-    background-color: #CCC;
-    border:1px solid whitesmoke;
-    padding:0px 15px;
-}
 .table-main{
 width:150;
 margin-left: 25%;
+background-color: lightblue;
+border:1px solid whitesmoke;
 }
-
-.table-main tr {
-    padding:0px 15px;
+table.table-main th{
+    width:700px;
+}
+table.table-main tr {
+    height:100px;
+    width:700px !important;
+    padding:15px 15px;
     background-color: white;
     border:1px solid white;
 }

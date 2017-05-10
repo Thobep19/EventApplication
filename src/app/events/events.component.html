@@ -2,22 +2,10 @@
     <div>
     <ul>
       <h1>Event</h1>
-      <table class ="table-header">
-        <tr>
-            <th><h1>Name</h1></th>
-            <th><h1>Date</h1></th>
-            <th><h1>Time</h1></th>
-            <th><h1>Street</h1></th>
-            <th><h1>City</h1></th>
-            <th><h1>State</h1></th>
-            <th><h1>Zipcode</h1></th>
-            <th><h1>Delete</h1></th>
-        </tr>
-      </table>
       <div *ngFor="let event of events" [routerLink]="['event',event._id] ">
         <section>
           <table class = "table-main">
-            <tr>
+            <tr class="table-row">
               <th>{{event.eventName}}</th>
               <th>{{event.eventDate}}</th>
               <th>{{event.eventTime}}</th>
