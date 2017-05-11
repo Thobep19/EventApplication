@@ -1,5 +1,39 @@
-.Event{
-    height:100px;
-    width:100px;
+.Event {
+    height: 100px;
+    width: 100px;
     background-color: #CCC;
+}
+
+.eventname {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25pt;
+    background-color: linen;
+}
+
+.mainevent {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 25pt;
+}
+
+.eventdetails {
+    margin: 30px;
+    background-color: lightblue;
+    width: 764px;
+    margin-left: 233px;
+}
+
+.eventdetails2 {
+    margin: 30px 82px;
+    background-color: wheat;
+}
+
+.mainevent2 {
+
+    background-color: wheat;
+    width: 764px;
+    margin-left: 233px;
+    height: 450px;
+    font-size: larger;
 }

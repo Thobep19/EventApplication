@@ -1,13 +1,31 @@
-<section>
-    <div class ="Event">
-    <ul>
-      <div>
-        <div *ngIf="event">
-          <P>{{event.eventDescription}}</P>
-          <P>{{event.eventDate}}</P>
-          <p>{{obj.event.eventStree}}</p>
-        </div>
-      </div>
-    </ul>
+<section class="eventdetails">
+    <div *ngIf="event">
+        <button (click)="goToEvent(event._id)">Edit Me</button>
+        <a [routerLink]="['event-edit', {id:event._id}]">Edit Me with anchor</a>
     </div>
+   
+    <h1 class="eventname" *ngIf="event"> {{event.eventName}}</h1>
+    <!--<img class = "eventpic" src="">-->
+    <div class="mainevent" *ngIf="event">
+        <P>Date:{{event.eventDate}}</P>
+        <p class="eventPrice">
+            Price: ${{event.eventPrice}}
+        </p>
+        <P>Street:{{event.eventStreet}}</P>
+        <p>Zip: {{event.eventZip}}</p>
+        <p>City: {{event.eventCity}}</p>
+        <br/>
+    </div>
+    <section class="eventdetails2">
+        <div class="mainevent2" *ngIf="event">
+            <p>Description: {{event.eventDescription}}</p>
+            <p>Organization Name:{{event.organizationName}} {{event.orgainizationType}}</p>
+            <p>Organization Address: {{event.organizationAddress}} {{event.organizationCity}} {{event.organizationZip}}</p>
+            <p>Organization Description:{{event.organizationDescription}}</p>
+            <br/>
+            <p>Organizor Name: {{event.organizorFirstName}} {{event.organizorLastName}}</p>
+            <p>Phone:{{event.organizorPhone}}</p>
+            <p>Email:{{event.organizorEmail}}</p>
+        </div>
+    </section>
 </section>

@@ -17,13 +17,16 @@ import { EventFormComponent } from './events/event-form/event-form.component';
 import { UsersComponent } from './users/users.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { UserComponent } from './user/user.component';
+import { EventsEditComponent } from './events-edit/events-edit.component';
 
 // Routes
 const appRoutes: Routes = [
   { path: '', component: EventsComponent },
   { path: 'event/:id',   component: EventComponent },
   { path: 'aboutus', component: AboutusComponent },
-  { path: 'event-form/:id', component: EventFormComponent }
+  { path: 'event-form/:id', component: EventFormComponent },
+  { path: 'event-edit/:id', component: EventsEditComponent }
+
 ];
 
 // NgModule
@@ -40,6 +43,7 @@ const appRoutes: Routes = [
     UserFormComponent,
     UserComponent,
     EventFormComponent,
+    EventsEditComponent,
   ],
   imports: [
     BrowserModule,

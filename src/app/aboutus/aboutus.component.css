@@ -1,8 +1,49 @@
-.main-about{
-    margin:0 auto;
-    margin:center;  
-    background-color: greenyellow;
-    float:right;
-    height:500px;
-    width:70%;
+.main-about {
+    margin: 40px -303px;
+    margin: center;
+    background-color: lightblue;
+    float: right;
+    height: 950px;
+    width: 97%;
+}
+
+.aboutp {
+    float: right;
+    margin: -216px 63px;
+    width: 645px;
+    font-size: 15pt;
+}
+
+.aboutp2 {
+    margin: 83px 50px;
+    font-size: 15pt;
+}
+
+.aboutp3 {
+    margin: -76px 49px;
+    font-size: 15pt;
+}
+
+.aboutuspic2 {
+    margin: -63px 20px;
+    float: right;
+    height: 180px;
+}
+
+.title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28pt;
+}
+
+.aboutuspic {
+    margin: 30px;
+    height: 200px;
+    border-color: black;
+    border-width: medium;
+}
+
+.aboutp4 {
+    margin: 77px 49px;
+    font-size: 15pt;
 }
