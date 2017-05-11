@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EventService } from '../events.service';
-
+import { FormsModule, FormBuilder,FormGroup } from '@angular/forms';
 @Component({
   selector: 'event-form',
   templateUrl: './event-form.component.html',

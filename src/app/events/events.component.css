@@ -15,3 +15,7 @@ table.table-main tr {
     background-color: white;
     border:1px solid white;
 }
+.event-image {
+    height:100px;
+    width:100px;
+}

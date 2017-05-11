@@ -6,12 +6,13 @@
         <section>
           <table class = "table-main">
             <tr class="table-row">
+              <th><img class="event-image" src="./assets/images/event.png"></th>
               <th>{{event.eventName}}</th>
               <th>{{event.eventDate}}</th>
               <th>{{event.eventTime}}</th>
-              <th>{{event.eventLocation.eventStreet}}</th>
-              <th>{{event.eventLocation.eventCity}}</th>
-              <th>{{event.eventLocation.eventZip}}</th>
+              <th>{{event.eventStreet}}</th>
+              <th>{{event.eventCity}}</th>
+              <th>{{event.eventZip}}</th>
               <th><button (click)="deleteEvent(event._id)">Delete</button></th>
             </tr>
           </table>
