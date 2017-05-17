@@ -9,7 +9,7 @@ import {EventService} from '../events/events.service';
 })
 export class EventsEditComponent implements OnInit {
 
-  event:Object;
+  event:any;
 
   constructor(
     private eventService: EventService,
@@ -19,12 +19,18 @@ export class EventsEditComponent implements OnInit {
 
   ngOnInit() {
 
-    const eventId = this.activatedRoute.snapshot.params['id'];
+    let eventId = this.activatedRoute.snapshot.params['id'];
+    console.log('eventId', eventId);
     this.eventService.getEventById(eventId).then((resp) => {
-      console.log('resp from getEventById from event-edit compnennt', resp);
       this.event = resp;
+      console.log('resp from getEventbyId from edit event component', resp);
     });
   }
+
+  getEventById(id) {
+    return this.eventService.getEventById(id);
+  }
+  
  editEvent(event) {
     let id = event['_id'];
     delete event['_id'];
@@ -35,12 +41,13 @@ export class EventsEditComponent implements OnInit {
       if(resp) {
         this.event = resp;
         this.goToHome();
+        location.reload(true);
       }
     });
   }
 
   goToHome() {
-    this.router.navigate(['events']);
+    this.router.navigate(['']);
   };
 }
 

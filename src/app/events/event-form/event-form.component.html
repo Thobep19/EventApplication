@@ -45,12 +45,7 @@
     <p><input class ="description" type="text" [(ngModel)]="event.organizationDescription" maxlength="200"></p>
 
     <p><label class="label-tag" for="event-organization-type">Type of Organization: </label></p>
-    <p><select [(ngModel)]="event.organizationType">
-        <option>Private</option>
-        <option>Business</option>
-        <option>Non-Profit</option>
-        <option>Government</option>
-    </select></p>
+    <p><input type="text" [(ngModel)]="event.organizationType" maxlength="25"></p>
 
   </div>
 

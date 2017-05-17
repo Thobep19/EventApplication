@@ -1,6 +1,7 @@
 <p></p>
-<div class ="main">
+<div *ngIf = "event" class ="main">
   <h1>Edit Event Information</h1>
+  
     <p><label class="label-tag" for="event-name">Name: </label></p>
     <p><input type="text" [(ngModel)]="event.eventName" maxlength="25"></p>
 
@@ -26,7 +27,7 @@
     <p><input type="text" [(ngModel)]="event.eventPrice"></p>
 </div>
 
-<div class ="main">
+<div *ngIf = "event" class ="main">
     <h1>Enter Organization Information</h1>
 
     <p><label class="label-tag" for="event-organization-name">Organization Name: </label></p>
@@ -45,16 +46,11 @@
     <p><input class ="description" type="text" [(ngModel)]="event.organizationDescription" maxlength="200"></p>
 
     <p><label class="label-tag" for="event-organization-type">Type of Organization: </label></p>
-    <p><select [(ngModel)]="event.organizationType">
-        <option>Private</option>
-        <option>Business</option>
-        <option>Non-Profit</option>
-        <option>Government</option>
-    </select></p>
+    <p><input type="text" [(ngModel)]="event.organizationType" maxlength="25"></p>
 
   </div>
 
-  <div class ="main">
+  <div *ngIf = "event" class ="main">
     <h1>Enter Organizor Information</h1>
 
     <p><label class="label-tag" for="event-orgainzaor-fname">First Name: </label></p>

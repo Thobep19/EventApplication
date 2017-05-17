@@ -6,6 +6,7 @@ import { RouterModule, Routes, Router } from '@angular/router';
 
 // Services
 import { EventService } from './events/events.service';
+import { UserService } from './user-form/user.service';
 
 // Import Components
 import { AppComponent } from './app.component';
@@ -16,6 +17,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { EventFormComponent } from './events/event-form/event-form.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { EventsEditComponent } from './events-edit/events-edit.component';
+import { LoginComponent } from './login/login.component';
+import { UsersComponent } from './users/users.component';
 
 // Routes
 const appRoutes: Routes = [
@@ -26,7 +29,9 @@ const appRoutes: Routes = [
   { path: 'event-edit/:id', component: EventsEditComponent },
   { path: 'events', component: EventsComponent },
   { path: 'app-root', component: AppComponent},
-  { path: 'user-form/:id', component: UserFormComponent }
+  { path: 'user-form/:id', component: UserFormComponent },
+  { path: 'login', component: LoginComponent},
+  { path: 'users', component: UsersComponent}
 ];
 
 // NgModule
@@ -42,6 +47,8 @@ const appRoutes: Routes = [
     UserFormComponent,
     EventFormComponent,
     EventsEditComponent,
+    LoginComponent,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +57,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
-    EventService
+    EventService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })

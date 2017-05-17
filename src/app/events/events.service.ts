@@ -56,6 +56,5 @@ export class EventService {
             return event;
         });
     }
-    
 
-}
+    }
