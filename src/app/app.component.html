@@ -4,17 +4,28 @@
     <title>Event Page</title>
   </head>
 <div class="Main">
+  <div class="main-logo">
+    <p class ="h1">Bulldog Event Tracker</p>
+  </div>
   <header class = "main-header">
-    <h1>Bulldog Event Tracker</h1>
+  <p></p>
   </header>
   <main-navigation></main-navigation>
   <section class = "event-feed">
-          <ul>
-            <router-outlet></router-outlet>
-          </ul>
+    <router-outlet></router-outlet>
   </section>
-  <footer class = "main-footer">
-    <p>(C) Created by Masters of the Web</p>
-  </footer>
+<footer class="main-footer">
+  <div class="social-links">
+    <ul class = "footer-ul">
+      <li><a href="http://facebook.com" target="_blank"><img class="social-icon" src="./assets/images/facebook.jpg" alt="Facebook-icon"></a></li>
+      <li><a href="http://instagram.com" target="_blank"><img class="social-icon" src="./assets/images/instagram.png" alt="Instgram-icon"></a></li>
+      <li><a href="http://plus.google.com/" target="_blank"><img class="social-icon" src="./assets/images/googleplus.jpg" alt="Linkined-icon"></a></li>
+      <li><a href="http://snapchat.com" target="_blank"><img class="social-icon" src="./assets/images/snapchat.jpg" alt="Pinterest-icon"></a></li>
+      <li><a href="http://twitter.com" target="_blank"><img class="social-icon" src="./assets/images/twitter.png" alt="Twitter-icon"></a></li>
+      <li><a href="http://youtube.com" target="_blank"><img class="social-icon" src="./assets/images/youtube.jpg" alt="Youtube-icon"></a></li>
+    </ul>
+  </div>
+  <p class="copyright"> (C) Created By Masters of the Web</p>
+</footer>
 </div>
 </html>

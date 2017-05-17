@@ -22,6 +22,7 @@ ngOnInit() {
     console.log('event',event);
     this.eventService.addEvent(event).then((resp) => {
       console.log('response from adding an event....', resp);
+      this.event.reset();
     });
   }
 

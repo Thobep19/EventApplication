@@ -1,33 +1,30 @@
 .main-about {
-    margin: 40px -303px;
-    margin: center;
+    margin-top:10px;
     background-color: lightblue;
-    float: right;
-    height: 950px;
-    width: 97%;
+    min-height:950px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex:1;
 }
 
 .aboutp {
-    float: right;
-    margin: -216px 63px;
-    width: 645px;
-    font-size: 15pt;
+font-size: 15pt;
+margin:10px 10px;
 }
 
 .aboutp2 {
-    margin: 83px 50px;
     font-size: 15pt;
+margin:10px 10px;
 }
 
 .aboutp3 {
-    margin: -76px 49px;
     font-size: 15pt;
+margin:10px 10px;
 }
 
-.aboutuspic2 {
-    margin: -63px 20px;
-    float: right;
-    height: 180px;
+.aboutp4 {
+    font-size: 15pt;
+    margin:45px 10px;
 }
 
 .title {
@@ -36,14 +33,31 @@
     font-size: 28pt;
 }
 
-.aboutuspic {
-    margin: 30px;
-    height: 200px;
+.image {
+    height:200px;
+    width: 400px;
     border-color: black;
     border-width: medium;
 }
-
-.aboutp4 {
-    margin: 77px 49px;
-    font-size: 15pt;
+div.main-gallery{
+    display:block;
+    margin-left:7.5%;
 }
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    height:auto;
+}
+

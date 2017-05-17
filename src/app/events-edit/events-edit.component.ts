@@ -13,7 +13,8 @@ export class EventsEditComponent implements OnInit {
 
   constructor(
     private eventService: EventService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -24,5 +25,22 @@ export class EventsEditComponent implements OnInit {
       this.event = resp;
     });
   }
+ editEvent(event) {
+    let id = event['_id'];
+    delete event['_id'];
+    delete event['__v'];
+    console.log('id', id);
+    this.eventService.updateEvent(id, event).then((resp) => {
+      console.log('resp from edit book component', resp);
+      if(resp) {
+        this.event = resp;
+        this.goToHome();
+      }
+    });
+  }
 
+  goToHome() {
+    this.router.navigate(['events']);
+  };
 }
+

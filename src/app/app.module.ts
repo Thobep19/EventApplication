@@ -14,9 +14,7 @@ import { EventComponent } from './events/event/event.component';
 import { MainNavigationComponent } from './main-navigation/main-navigation.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { EventFormComponent } from './events/event-form/event-form.component';
-import { UsersComponent } from './users/users.component';
 import { UserFormComponent } from './user-form/user-form.component';
-import { UserComponent } from './user/user.component';
 import { EventsEditComponent } from './events-edit/events-edit.component';
 
 // Routes
@@ -25,8 +23,10 @@ const appRoutes: Routes = [
   { path: 'event/:id',   component: EventComponent },
   { path: 'aboutus', component: AboutusComponent },
   { path: 'event-form/:id', component: EventFormComponent },
-  { path: 'event-edit/:id', component: EventsEditComponent }
-
+  { path: 'event-edit/:id', component: EventsEditComponent },
+  { path: 'events', component: EventsComponent },
+  { path: 'app-root', component: AppComponent},
+  { path: 'user-form/:id', component: UserFormComponent }
 ];
 
 // NgModule
@@ -39,9 +39,7 @@ const appRoutes: Routes = [
     EventComponent,
     MainNavigationComponent,
     AboutusComponent,
-    UsersComponent,
     UserFormComponent,
-    UserComponent,
     EventFormComponent,
     EventsEditComponent,
   ],

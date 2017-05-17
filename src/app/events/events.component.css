@@ -1,21 +1,25 @@
 
 .table-main{
-width:150;
-margin-left: 25%;
+table-layout:fixed;
+width:100%;
 background-color: lightblue;
 border:1px solid whitesmoke;
 }
 table.table-main th{
-    width:700px;
+    width:200px;
 }
 table.table-main tr {
-    height:100px;
-    width:700px !important;
+    width:200px;
     padding:15px 15px;
     background-color: white;
     border:1px solid white;
+}
+table.table-main tr:hover {
+    background-color:#CCC;
 }
 .event-image {
     height:100px;
     width:100px;
 }
+
+

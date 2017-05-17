@@ -25,7 +25,11 @@ export class EventComponent implements OnInit {
         this.event = resp;
      });
   }
-
+  deleteEvent(id:string) {
+    console.log(`deleting event with id of : ${id}`);
+    this.eventService.deleteEvent(id);
+    this.router.navigate(['']);
+  }
   goToEvent(eventId) {
     this.router.navigate(['/event-edit', eventId]);
   }

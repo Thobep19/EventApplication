@@ -7,21 +7,70 @@
     margin:0 auto;
 }
 html{
-    background-image:url('../assets/images/background.jpg');
+    background-image:url('../assets/images/background_2.jpg');
     background-size: cover;
+}
+
+.h1{
+    width:45%;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 40pt;
 }
 .main-header{
     background-color:lightblue;
-    height: 100px;
+    height: 150px;
     width:100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-image:url('../assets/images/keep.jpg');
+    background-size:17% 100%;
 }
 .event-feed{
-    width:80%;
+    width:100%;
+    min-height: 1000px;
     flex:1;
-    height:1200px;
 }
 
-.main-footer{
-    background-color:lightblue;
-    height:100 px;
+.main-footer {
+    background-color: skyblue;
+    height: 100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+ul.footer-ul {
+    list-style-type: none;
+}
+
+ul.footer-ul li {
+    display: table-cell;
+}
+
+ul.footer-ul a {
+    text-decoration: none;
+    padding: 6px 10px;
+    display: block;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+.copyright{
+    position:center;
+    text-align: center;
+    font-weight: bold;
+    font-style:italic;
+    font-size: 20pt;
+    color:whitesmoke;
+    font-family: "Times New Roman", Times, serif;
+}
+.social-links{
+    margin:auto;
+    margin-left: 35%;
+}
+.social-icon{
+    height:40px;
+    width:50px;
 }

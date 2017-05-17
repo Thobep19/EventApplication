@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EventService } from './events.service';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'events',
@@ -41,6 +41,11 @@ export class EventsComponent implements OnInit {
   deleteEvent(id:string) {
     console.log(`deleting an event with id of : ${id}`);
     this.eventService.deleteEvent(id);
+    this.goToHome();
   }
+
+    goToHome() {
+    this.router.navigate(['']);
+  };
 
 }
