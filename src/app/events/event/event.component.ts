@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EventService } from '../events.service';
-import { ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'event',
@@ -13,7 +13,8 @@ export class EventComponent implements OnInit {
 
   constructor(
     private eventService: EventService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private router:Router
   ) { }
 
   ngOnInit() {
@@ -24,5 +25,17 @@ export class EventComponent implements OnInit {
         this.event = resp;
      });
   }
+  deleteEvent(id:string) {
+    console.log(`deleting event with id of : ${id}`);
+    this.eventService.deleteEvent(id);
+    this.goToHome();
+    location.reload(true);
+  }
+  goToEvent(eventId) {
+    this.router.navigate(['/event-edit', eventId]);
+  }
+  goToHome(){
+    this.router.navigate(['']);
+};
   
 }

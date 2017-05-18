@@ -1,12 +1,36 @@
-<section>
-    <div class ="Event">
-    <ul>
-      <div>
-        <div *ngIf="event">
-          <P>{{event.eventDescription}}</P>
-          <P>{{event.eventDate}}</P>
-        </div>
-      </div>
-    </ul>
+<section class="eventdetails">
+    <h1 class="eventname" *ngIf="event"> {{event.eventName}}</h1>
+    <div class="mainevent1" *ngIf="event">
+        <label class="label">Date: </label><p class ="p">{{event.eventDate}}</p>
+        <label class="label">Price:</label><p class ="p">$ {{event.eventPrice}}</p>
+        <label class="label">Address: </label><p class ="p">{{event.eventStreet}} , {{event.eventCity}} , {{event.eventZip}}</p>
+        <label class="label">Event Description: </label><p class ="p">{{event.eventDescription}}</p>
+        <br/>
     </div>
+        <section class="event-image">
+        <img class="image" src="./assets/images/event.png">
+        </section>
 </section>
+    
+    <section class="org-details">
+        <h1 class="eventname" *ngIf="event"> {{event.organizationName}}</h1>
+        <div class="mainevent" *ngIf="event">
+            <label class="label">Type:</label><p class ="p">{{event.organizationType}}</p>
+            <label class="label">Address: </label><p class ="p">{{event.organizationAddress}} , {{event.organizationCity}} , {{event.organizationZip}}</p>
+            <label class="label">Description: </label><p class ="p">{{event.organizationDescription}}</p>
+            <br/>
+        </div>
+    </section>
+        <section class="organizor-details">
+            <h1 class="eventname" *ngIf="event"> {{event.organizorFirstName}} {{event.organizorLastName}}</h1>
+            <div class="mainevent" *ngIf="event">
+            <label class="label">Phone: </label><p class ="p">Phone:{{event.organizorPhone}}</p>
+            <label class="label">Email: </label><p class ="p">{{event.organizorEmail}}</p>
+        </div>
+        </section>
+
+        <div *ngIf="event">
+        <button class ="event-button"(click)="goToEvent(event._id)">Edit Me</button>
+        <!--<a [routerLink]="['event-edit', {id:event._id}]">Edit Me with anchor</a>-->
+        <button class ="event-button"(click)="deleteEvent(event._id)">Delete Event</button>
+    </div>

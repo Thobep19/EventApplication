@@ -1,0 +1,34 @@
+<section>
+
+    <body>
+        <div class="login_form">
+            <h1 class="login_form_h1">Login</h1>
+            <label class="usrnm" for="username">Username</label>
+            <input class="login_input" type="text" id="usernamme">
+            <label class="password" for="password">Password</label>
+            <input class="login_input" type="password" id="password">
+            <button class="login-button" id="btn-login" type="button" name="submit" (click)="goToHome()">Login</button>
+            <div id="error_container">
+                <p id="error-text" class="error-message"></p>
+            </div>
+        </div>
+        <script>
+            function login() {
+                let username = document.getElementById('username').value;
+                let password = document.getElementById('password').value;
+                let errorText = document.getElementById('error-text');
+                if (username == 'user' && password == 'events') {
+                    location.href = '#';
+                } else {
+                    errorContainer.style.display = 'block';
+                    errorText.style.display = 'block';
+                    errorText.innerHTML = 'Error please try again..';
+                    let handle = setInterval(() => {
+                        errorContainer.style.display = 'none';
+                        clearInterval(handle);
+                    }, 2000);
+                }
+            }
+        </script>
+    </body>
+</section>

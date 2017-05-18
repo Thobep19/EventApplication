@@ -1,0 +1,63 @@
+.main-about {
+    margin-top:10px;
+    background-color: lightblue;
+    min-height:950px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex:1;
+}
+
+.aboutp {
+font-size: 15pt;
+margin:10px 10px;
+}
+
+.aboutp2 {
+    font-size: 15pt;
+margin:10px 10px;
+}
+
+.aboutp3 {
+    font-size: 15pt;
+margin:10px 10px;
+}
+
+.aboutp4 {
+    font-size: 15pt;
+    margin:45px 10px;
+}
+
+.title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28pt;
+}
+
+.image {
+    height:200px;
+    width: 300px;
+    border-color: black;
+    border-width: medium;
+}
+div.main-gallery{
+    display:block;
+    margin-left:7.5%;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    height:auto;
+}
+

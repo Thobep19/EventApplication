@@ -1,24 +1,22 @@
 <section>
     <div>
-    <ul>
-      <table>
-        <tr>
-            <th><h1>Event Description</h1></th>
-            <th><h1>Event Date</h1></th>
-            <th><h1>Delete</h1></th>
-        </tr>
-      </table>
+      <h1>Events</h1>
       <div *ngFor="let event of events" [routerLink]="['event',event._id] ">
         <section>
-          <table>
-            <tr>
-              <th>{{event.eventDescription}}</th>
+          <table class = "table-main">
+            <tr class="table-row">
+              <th><img class="event-image" src="./assets/images/event.png"></th>
+              <th>{{event.eventName}}</th>
               <th>{{event.eventDate}}</th>
-              <th><button (click)="deleteEvent(event._id)">X</button></th>
-          </tr>
+              <th>{{event.eventTime}}</th>
+              <th>{{event.eventStreet}}</th>
+              <th>{{event.eventCity}}</th>
+              <th>{{event.eventZip}}</th>
+              <!--<th><button (click)="deleteEvent(event._id)">Delete</button></th>-->
+            </tr>
           </table>
         </section>
       </div>
-    </ul>
     </div>
+    <router-outlet></router-outlet>
 </section>

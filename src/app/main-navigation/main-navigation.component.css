@@ -1,9 +1,59 @@
-.main-aside{
-    background-color:blueviolet;
-    height:500px;
-    width:10%;
-    float:left;
+.main-nav {
+    margin-top: 10px;
+    background-color: skyblue;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
-.main-ul li{
-    list-style: none;
+
+ul.main-ul {
+    height:100%;
+    list-style-type: none;
+    width: 80%;
+    padding: 10px;
+}
+
+ul.main-ul li {
+    display: table-cell;
+}
+
+ul.main-ul a {
+    border: 1px solid skyblue;
+    border-radius: 4px;
+    padding:25px 25px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-gradient{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#73bce9+0,bce5f6+100&1+0,0+100 */
+    background: -moz-linear-gradient(left,  rgba(115,188,233,1) 0%, rgba(188,229,246,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(115,188,233,1) 0%,rgba(188,229,246,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(115,188,233,1) 0%,rgba(188,229,246,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73bce9', endColorstr='#00bce5f6',GradientType=1 ); /* IE6-9 */
+
+}
+
+ul.main-ul li a:hover{
+    background-color:whitesmoke;
+}
+
+@media screen and (max-width: 600px){
+    ul.main-ul li.right, 
+    ul.main-ul li {float: none;}
+}
+
+.new-user{
+    width:150px;
+    height:50px;
+    background-color:lightblue;
+    font-size:14pt;
+}
+.new-event{
+    width:200px;
+    height:50px;
+    background-color:lightblue;
+    font-size:14pt;
 }

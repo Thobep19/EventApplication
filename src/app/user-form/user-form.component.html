@@ -1,0 +1,18 @@
+<div class ="main">
+  <h1>Enter Event Information</h1>
+    <p><label class="label-tag" for="user-first-name"> First Name: </label></p>
+    <p><input type="text" [(ngModel)]="user.userFirst" maxlength="25"></p>
+
+    <p><label class ="label-tag" for="user-last-name">Last Name: </label></p>
+    <p><input type="text" [(ngModel)]="user.userLast" maxlength="200"></p>
+
+    <p><label class="label-tag" for="user-password">Password: </label></p>
+    <p><input type="text" [(ngModel)]="user.userPassword" maxlength="25" ></p>
+
+    <p><label class="label-tag" for="user-email">Email: </label></p>
+    <p><input type="text" [(ngModel)]="user.userEmail" maxlength="25"></p>
+
+    <p><button class="add-user" (click)="addUser(user)">Sign UP!</button><p>
+</div>
+
+

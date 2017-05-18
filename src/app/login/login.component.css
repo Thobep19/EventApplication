@@ -1,0 +1,54 @@
+div.login_form {
+    padding: 81px;
+    width: 500px;
+    height: 400px;
+    background-color: aliceblue;
+    margin: 90px auto 0;
+    border-radius: 38px;
+}
+
+.login_form_h1 {
+    position: absolute;
+    margin: -45px auto;
+    font-size: xx-large;
+}
+
+.usrnm {
+    font-size: xx-large;
+}
+
+.password {
+    font-size: xx-large;
+}
+
+input.login_input {
+    width: 100%;
+    padding: 21px 2px;
+    border-radius: 5px;
+    margin: 19px 0;
+}
+
+button.login-button {
+    padding: 11px 45px;
+    border-radius: 7px;
+    background-color: blueviolet;
+    color: #FFF;
+    width:100%;
+}
+
+p.error_message {
+    display: none;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+    color: #FFF;
+    background-color: orangered;
+    border: 1px solid yellow;
+    border-radius: 5px;
+}
+
+
+/*div.login-page {
+    background-image: url('../images/login-background.jpg');
+    background-size: cover;
+}*/

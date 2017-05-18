@@ -1,0 +1,20 @@
+<section>
+    <div>
+      <h1 class="h1">Users</h1>
+      <div *ngFor="let user of users" [routerLink]="['user',user._id] ">
+        <section>
+          <table class = "table-main">
+            <tr class="table-row">
+              <th>
+                <img class="event-image" src="./assets/images/user.jpg">
+                  <p>{{user.userFirst}}</p>
+                  <p>{{user.userLast}}</p>
+                  <p>{{user.userEmail}}</p>
+                  <p><button (click)="deleteUser(user._id)">Delete</button></p>
+              </th>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </div>
+</section>

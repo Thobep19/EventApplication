@@ -1,0 +1,69 @@
+<p></p>
+<div *ngIf = "event" class ="main">
+  <h1>Edit Event Information</h1>
+  
+    <p><label class="label-tag" for="event-name">Name: </label></p>
+    <p><input type="text" [(ngModel)]="event.eventName" maxlength="25"></p>
+
+    <p><label class ="label-tag" for="event-description">Description: </label></p>
+    <p><input class ="description" type="text" [(ngModel)]="event.eventDescription" maxlength="200"></p>
+
+    <p><label class="label-tag" for="event-date">Date: </label></p>
+    <p><input type="date" [(ngModel)]="event.eventDate"></p>
+
+    <p><label class="label-tag" for="event-time">Time: </label></p>
+    <p><input type="time" [(ngModel)]="event.eventTime"></p>
+
+    <p><label class="label-tag" for="event-street">Street: </label></p>
+    <p><input type="text" [(ngModel)]="event.eventStreet" maxlength="25" ></p>
+
+    <p><label class="label-tag" for="event-city">City: </label></p>
+    <p><input type="text" [(ngModel)]="event.eventCity" maxlength="25"></p>
+
+    <p><label class="label-tag" for="event-zip">Zipcode: </label></p>
+    <p><input type="text" [(ngModel)]="event.eventZip" maxlength="5"></p>
+
+    <p><label class="label-tag" for="event-price">Price: </label></p>
+    <p><input type="text" [(ngModel)]="event.eventPrice"></p>
+</div>
+
+<div *ngIf = "event" class ="main">
+    <h1>Enter Organization Information</h1>
+
+    <p><label class="label-tag" for="event-organization-name">Organization Name: </label></p>
+    <p><input type="text" [(ngModel)]="event.organizationName" maxlength="25"></p>
+
+    <p><label class="label-tag" for="event-organization-address">Address: </label></p>
+    <p><input type="text" [(ngModel)]="event.organizationAddress" maxlength="25"></p>
+
+    <p><label class="label-tag" for="event-organization-city">City: </label></p>
+    <p> <input type="text" [(ngModel)]="event.organizationCity" maxlength="25"></p>
+
+    <p><label class="label-tag" for="event-orgainzation-zip">Zip: </label></p>
+    <p><input type="text" [(ngModel)]="event.organizationZip" maxlength="5"></p>
+
+    <p><label class="label-tag" for="event-organization-description">Description: </label></p>
+    <p><input class ="description" type="text" [(ngModel)]="event.organizationDescription" maxlength="200"></p>
+
+    <p><label class="label-tag" for="event-organization-type">Type of Organization: </label></p>
+    <p><input type="text" [(ngModel)]="event.organizationType" maxlength="25"></p>
+
+  </div>
+
+  <div *ngIf = "event" class ="main">
+    <h1>Enter Organizor Information</h1>
+
+    <p><label class="label-tag" for="event-orgainzaor-fname">First Name: </label></p>
+    <p><input type="text" [(ngModel)]="event.organizorFirstName" maxlength="25"></p>
+
+    <p><label class="label-tag" for="event-organizor-lname">Last Name: </label></p>
+    <p><input type="text" [(ngModel)]="event.organizorLastName" maxlength="25"></p>
+
+    <p><label class="label-tag" for="event-organizor-phone">Phone: </label></p>
+    <p><input type="text" [(ngModel)]="event.organizorPhone" maxlength="25"></p>
+
+    <p><label class="label-tag" for="event-orgainzor-email"maxlength="25">Email: </label></p>
+    <p><input type="text" [(ngModel)]="event.organizorEmail"></p>
+    <button class="edit-event" (click)="editEvent(event)">Submit</button>
+  </div>
+

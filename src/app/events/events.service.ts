@@ -56,6 +56,11 @@ export class EventService {
             return event;
         });
     }
-    
-
-}
+    updateBook(id, book): Promise<Object> {
+        return this.http.put(`${this.apiUrl}/book/id/${id}`, book).toPromise().then((resp) => {
+            let book = resp.json();
+            console.log('book', book);
+            return book;
+        });
+    }
+    }

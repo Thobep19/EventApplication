@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { EventsComponent } from '../events/events.component';
 
 @Component({
   selector: 'main-navigation',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainNavigationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+   
   }
 
+  
+  goToAbout() {
+    console.log('go to aboutus....;');
+    this.router.navigate(['aboutus']);
+  }
+
+    goToNewEventForm() {
+    console.log('go to new event from....;');
+    this.router.navigate(['event-form']);
+  }
+
+    goToEvents(events) {
+    this.router.navigate(['events']);
+  }
 }
+
